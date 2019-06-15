@@ -3,7 +3,7 @@ import ActionType from './actionType'
 const  createStore = (reducer) => {
 
     // 定义state对象
-    let state;
+    let state = {}
     
     // 事件订阅
     let evevtListener = []
@@ -16,10 +16,10 @@ const  createStore = (reducer) => {
     }
 
     let dispatch = (action=ActionType) => {
-
+        
        state =  reducer(state, action)
-            
-        // 
+        
+        
         evevtListener.map((cb) => {
             cb()
         })

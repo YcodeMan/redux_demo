@@ -1,5 +1,8 @@
-import {createStore} from '@redux'
-import reducer from './reducres/Input'
+import {createStore, combineReducers} from '@redux'
+import reducers from './reducers'
+
+
+const reducer = combineReducers(reducers)
 
 
 const store = createStore(reducer)

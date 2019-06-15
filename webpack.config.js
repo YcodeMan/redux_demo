@@ -31,7 +31,8 @@ module.exports = {
         alias: {
             '@': path.join(__dirname, 'src'),
             '@store': path.join(__dirname, 'src/store'),
-            '@redux': path.join(__dirname, 'src/redux')
+            '@redux': path.join(__dirname, 'src/redux'),
+            '@components': path.join(__dirname, 'src/components')
         }
     }
 }
