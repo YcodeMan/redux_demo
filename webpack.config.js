@@ -26,5 +26,13 @@ module.exports = {
             filename: 'index.html',
             template: 'index.html'
         })
-    ]
+    ],
+    resolve: {
+        alias: {
+            '@': path.join(__dirname, 'src'),
+            '@store': path.join(__dirname, 'src/store'),
+            '@redux': path.join(__dirname, 'src/redux'),
+            '@components': path.join(__dirname, 'src/components')
+        }
+    }
 }
